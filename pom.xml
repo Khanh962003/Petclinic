@@ -459,6 +459,24 @@
                     </to>
                 </configuration>
             </plugin>
+           
+            <plugin>
+                 <groupId>org.sonarsource.scanner.maven</groupId>
+                 <artifactId>sonar-maven-plugin</artifactId>
+                 <version>4.0.0.4121</version>
+                 <configuration>
+                          <properties>
+                                   <property>
+                                            <name>sonar.host.url</name>
+                                            <value>http://192.168.145.196:9000</value>
+                                   </property>
+                                   <property>
+                                            <name>sonar.login</name>
+                                            <value>squ_8124124d5127b6a0b20419d3ab979b25c2b284a0</value> <!-- Thêm token hoặc thông tin đăng nhập nếu cần -->
+                                   </property>
+                          </properties>
+                 </configuration>
+            </plugin>
 
         </plugins>
     </build>
