@@ -36,4 +36,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_SCANNER_CONNECTION_TIMEOUT: 15000
+          SONAR_HTTP_TIMEOUT: 15000 
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Khanh962003_Petclinic_f29b906c-5d99-4f7d-8e6a-dd6eb3a8c562 -Dsonar.projectName='Petclinic'
